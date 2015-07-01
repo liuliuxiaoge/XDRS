@@ -1,0 +1,7 @@
+from xdrs.controller.controller import XdrsController
+from xdrs.utils1 import parse_options
+from xdrs.daemon import run_daemon
+
+if __name__ == '__main__':
+    conf_file = '/etc/xdrs/xdrs.conf'
+    run_daemon(XdrsController, conf_file, once=False)

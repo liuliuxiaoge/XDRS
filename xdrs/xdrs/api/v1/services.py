@@ -1,0 +1,1 @@
+from xdrs.api.v1.admin_detection import authorize
